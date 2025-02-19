@@ -8,8 +8,10 @@
 		{
 			"disable": 0,
 			"type": "glances",
+			"protocol": "http",
+			"port": 61208,
+			"path": "/",
 			"settings": {
-				"url": "http://homeserver:61208/",
 				"refreshMs": 5000
 			}
 		}
@@ -21,13 +23,17 @@
 			"tiles": [
 				{
 					"name": "Glances",
+					"protocol": "http",
 					"info": "Glances is a cross-platform monitoring tool which aims to present a maximum of information in a minimum of space",
-					"url": "http://homeserver:61208/",
+					"port": 6120,
+					"path": "/",
 					"faIcon": "fa fa-microchip"
 				},
 				{
 					"name": "UptimeKuma",
-					"url": "http://homeserver:3001/",
+					"protocol": "http",
+					"port": 3001,
+					"path": "/",
 					"faIcon": "fa fa-wave-square"
 				}
 			]
@@ -37,12 +43,16 @@
 			"tiles": [
 				{
 					"name": "Portainer",
-					"url": "http://homeserver:9000/",
+					"protocol": "https",
+					"port": 9443,
+					"path": "/",
 					"faIcon": "fab fa-docker"
 				},
 				{
 					"name": "FileBrowser",
-					"url": "http://homeserver:8020/",
+					"protocol": "http",
+					"port": 8020,
+					"path": "/",
 					"faIcon": "fa fa-folder-tree"
 				}
 			]
@@ -52,12 +62,16 @@
 			"tiles": [
 				{
 					"name": "ChangeDetection",
-					"url": "http://homeserver:5000/",
+					"protocol": "http",
+					"port": 5000,
+					"path": "/",
 					"faIcon": "fa fa-bell"
 				},
 				{
 					"name": "Syncthing",
-					"url": "http://homeserver:8384/",
+					"protocol": "http",
+					"port": 8384,
+					"path": "/",
 					"faIcon": "fa fa-rotate"
 				}
 			]
@@ -68,22 +82,30 @@
 				{
 					"disable": 1,
 					"name": "Readarr",
-					"url": "http://homeserver:8787/",
+					"protocol": "http",
+					"port": 8787,
+					"path": "/",
 					"faIcon": "fa fa-book"
 				},
 				{
 					"name": "JellyFin",
-					"url": "http://homeserver:8096/",
+					"protocol": "http",
+					"port": 8096,
+					"path": "/",
 					"faIcon": "fa fa-video"
 				},
 				{
 					"name": "Radarr",
-					"url": "http://homeserver:7878/",
+					"protocol": "http",
+					"port": 7878,
+					"path": "/",
 					"faIcon": "fa fa-clapperboard"
 				},
 				{
 					"name": "Sonarr",
-					"url": "http://homeserver:8989/",
+					"protocol": "http",
+					"port": 8989,
+					"path": "/",
 					"faIcon": "fa fa-tv"
 				}
 			]
@@ -95,6 +117,7 @@
 					"disableCheck": 1,
 					"openTab": "same",
 					"name": "Self-Hosting",
+					"protocol": "http",
 					"url": "?s=settings.sh.json",
 					"faIcon": "fa-regular fa-hard-drive"
 				}
